@@ -1,9 +1,9 @@
 {
-  "name": "NUXTJS-EDGRID",
+  "name": "nuxtjs-edgrid",
   "version": "1.0.0",
-  "description": "My neat Nuxt.js project",
+  "description": "Another Nuxt.js project",
   "author": "MrJmpl3",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
