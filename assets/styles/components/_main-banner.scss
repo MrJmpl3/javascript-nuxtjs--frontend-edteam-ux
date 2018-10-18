@@ -1,0 +1,69 @@
+.main-banner {
+  --color    : var(--first-color);
+  position   : fixed;
+  width      : 100%;
+  background : var(--color);
+  color      : #FFF;
+  // clip-path  : polygon(0 0, 100% 0, 100% 100%, 0 94%);
+
+  // Separación del contenido
+  padding-top    : 2rem;
+  padding-bottom : 2.5rem;
+
+  @include from(l) {
+    padding-top    : 4rem;
+    padding-bottom : 5rem;
+  }
+
+  h1, h2 {
+    margin-bottom : 0;
+    @include t2;
+
+    + .subtitle {
+      margin-top : .5rem;
+      margin-bottom : 0;
+    }
+  }
+
+  [class*=button] {
+    margin-top : 1rem;
+  }
+}
+
+.main-banner__img {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  width      : 100%;
+  height     : 100%;
+  object-fit : cover;
+  opacity    : .2;
+  filter     : blur(12px);
+}
+
+.main-banner__data {
+  text-align : center;
+  position   : relative;
+}
+
+.main-banner__author {
+  color      : #fff;
+  margin-top : .5rem;
+
+  a {
+    color: inherit;
+  }
+
+  &-img {
+    width         : 5rem;
+    height        : 5rem;
+    border-radius : 50%;
+    border        : 2px solid;
+    display       : block;
+    margin        : 0 auto;
+  }
+
+  &-name {
+    font-size : fontSize(small);
+  }
+}

@@ -1,0 +1,33 @@
+
+
+// Settings for EDgrid
+$dev        : false;
+$cssCore    : false;
+$cssHelpers : true;
+$max-width  : 1344px;
+$gutter     : 1rem;
+
+//layout
+:root {
+  --header-height : 3rem;
+  --max-width     : 1344px;
+  --gutter        : 1rem;
+}
+
+// z-ndex
+$z-back    : -10;
+$z-normal  : 1;
+$z-tooltip : 10;
+$z-fixed   : 100;
+$z-modal   : 1000;
+
+:root {
+  --z-back    : -10;
+  --z-normal  : 1;
+  --z-tooltip : 10;
+  --z-fixed   : 100;
+  --z-modal   : 1000;
+}
+
+// Images path
+$images-path: 'https://ux.ed.team/img';

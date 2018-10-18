@@ -1,0 +1,35 @@
+[class*="topbar"] {
+  background : var(--first-color);
+  color: #fff;
+  font-size : fontSize(small);
+
+  @include from(l) {
+    height : var(--header-height);
+  }
+
+  .ed-grid {
+    height : 100%;
+    align-items: center;
+  }
+
+  p, .button, form, input, a {
+    margin-top : 0;
+    margin-bottom : 0;
+    color: inherit;
+  }
+
+  form {
+    flex: auto;
+    @include showFrom(l);
+  }
+
+  input {
+    border : none;
+  }
+}
+
+// Color variations
+.topbar--secondary { background : var(--second-color) }
+.topbar--tertiary  { background : var(--third-color)  }
+.topbar--accent    { background : var(--accent-color) }
+.topbar--dark      { background : var(--dark-color)   }
